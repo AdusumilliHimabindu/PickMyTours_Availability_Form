@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>PickMyTours Availability Field Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Availability Field Form</h1>
+    <form id="availability-form">
+      <fieldset class="availability-type">
+        <legend><b>Availability Type</b></legend>
+        <label><input type="radio" name="availabilityType" value="everyDay">Every day</label>
+        <label><input type="radio" name="availabilityType" value="customDates">Custom dates</label>
+        <label><input type="radio" name="availabilityType" value="everyWeekday">Every week day</label>
+        <label><input type="radio" name="availabilityType" value="everyMonth">Every month with particular date</label>
+        <label><input type="radio" name="availabilityType" value="specificMonth">Particular month with specific dates</label>
+        <label><input type="radio" name="availabilityType" value="specificDate">Specific date</label>
+      </fieldset>
+
+      
+      <fieldset class="day-names">
+        <legend><b>Day Names</b></legend>
+        <label><input type="checkbox" name="dayNames[]" value="monday">Monday</label>
+        <label><input type="checkbox" name="dayNames[]" value="tuesday">Tuesday</label>
+        <label><input type="checkbox" name="dayNames[]" value="wednesday">Wednesday</label>
+        <label><input type="checkbox" name="dayNames[]" value="thursday">Thursday</label>
+        <label><input type="checkbox" name="dayNames[]" value="friday">Friday</label>
+        <label><input type="checkbox" name="dayNames[]" value="saturday">Saturday</label>
+        <label><input type="checkbox" name="dayNames[]" value="sunday">Sunday</label>
+      </fieldset>
+
+      <fieldset class="month-names">
+        <legend><b>Month Names</b></legend>
+        <label><input type="checkbox" name="monthNames[]" value="jan">January</label>
+        <label><input type="checkbox" name="monthNames[]" value="feb">Febuary</label>
+        <label><input type="checkbox" name="monthNames[]" value="mar">March</label>
+        <label><input type="checkbox" name="monthNames[]" value="apr">April</label>
+        <label><input type="checkbox" name="monthNames[]" value="may">May</label>
+        <label><input type="checkbox" name="monthNames[]" value="jun">June</label>
+        <label><input type="checkbox" name="monthNames[]" value="july">July</label>
+        <label><input type="checkbox" name="monthNames[]" value="aug">August</label>
+        <label><input type="checkbox" name="monthNames[]" value="sep">September</label>
+        <label><input type="checkbox" name="monthNames[]" value="oct">October</label>
+        <label><input type="checkbox" name="monthNames[]" value="nov">November</label>
+        <label><input type="checkbox" name="monthNames[]" value="dec">December</label>
+      </fieldset>
+
+      
+      <div class="date-pickers">
+        <label for="startDate"><b>Start Date:</b></label>
+        <input type="date" id="startDate" name="startDate">
+        <label for="endDate"><b>End Date:</b></label>
+        <input type="date" id="endDate" name="endDate">
+      </div>
+
+      
+      <div class="recurring">
+        <label><input type="checkbox" name="recurring">Recurring</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
